@@ -1,0 +1,62 @@
+@startuml
+class Account {
+    + accountNumber: String
+    + balance: double
+    + owner: String
+    + createAccount(): void
+    + deposit(amount: double): void
+    + withdraw(amount: double): void
+    + getAccountDetails(): String
+}
+
+class Parent {
+    + parentName: String
+    + relationship: String
+    + contactDetails: String
+    + approveTransaction(transaction: Transaction): void
+    + receiveNotification(message: String): void
+}
+
+class Transaction {
+    + transactionId: String
+    + amount: double
+    + transactionDate: Date
+    + transactionType: String
+    + status: String
+    + executeTransaction(): void
+    + cancelTransaction(): void
+}
+
+class UnderageAccount {
+    + guardian: Parent
+    + age: int
+    + withdrawalLimit: double
+    + savingsGoal: double
+    + setWithdrawalLimit(limit: double): void
+    + approveWithdraw(): boolean
+    + isUnderage(): boolean
+    + notifyGuardian(message: String): void
+}
+
+class SavingsGoal {
+    + goalName: String
+    + targetAmount: double
+    + currentAmount: double
+    + setGoal(target: double): void
+    + updateProgress(amount: double): void
+    + checkGoalCompletion(): boolean
+}
+
+class Notification {
+    + notificationId: String
+    + message: String
+    + dateSent: Date
+    + sendNotification(recipient: Parent): void
+}
+
+Account <|-- UnderageAccount
+Parent "1" -- "*" UnderageAccount : "guardian of"
+Transaction "1" -- "0..*" UnderageAccount : "transactions for"
+UnderageAccount "1" -- "1" SavingsGoal : "sets"
+UnderageAccount "1" -- "*" Notification : "receives"
+@enduml
