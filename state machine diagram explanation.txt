@@ -1,0 +1,85 @@
+state machine diagram describes the flow of states in an underage savings bank system. Here's a detailed explanation:
+
+1. Start (New Registration)
+This is the initial state where a new user begins the process of creating an account.
+
+2. Account Creation
+
+Entry Actions:
+Generate initial credentials for the account.
+Send a notification to the parent or guardian about the account setup.
+Transition Condition:
+Parent verification is required for the account to move to the next state.
+
+3. Pending Parental Approval
+
+The system awaits parental approval.
+Transition Conditions:
+If the parent approves, the account becomes Active.
+If the parent cancels registration, the account is closed, skipping activation.
+
+4. Active Account
+
+Once approved, the account is activated with the following features:
+Regular savings operations.
+Access to educational modules (e.g., financial literacy).
+Parental oversight (to monitor activities).
+Reward calculations based on milestones or goals.
+Key Substates:
+Normal Operation:
+The account operates normally under parental review.
+The child can:
+Set savings targets.
+Work towards financial goals.
+Rewards are distributed upon achieving milestones.
+Goals can be canceled or adjusted.
+Goal in Progress:
+This substate is entered when the child sets a savings target.
+Ends when the goal is either achieved or canceled.
+Reward Pending:
+Triggered when a milestone is reached, and the reward is ready to be distributed.
+
+5. Frozen Account
+This state is triggered by suspicious or unusual activities, such as:
+Unusual transaction patterns.
+Security breaches.
+Parental overrides.
+Legal requirements.
+Entry Actions:
+Suspend all transactions.
+Notify parents about the issues.
+Resolution:
+The account can return to Normal Operation if the parent resolves the issues.
+Alternatively, the parent can choose to close the account.
+
+6. Closed Account
+The account is permanently closed due to:
+Parent-initiated closure.
+Registration cancellation.
+System or parental decision after frozen status.
+
+Entry Actions:
+Archive account data.
+Generate a final report for reference.
+
+
+End State:
+The system confirms account termination, completing the lifecycle.
+Overall Lifecycle Summary:
+The system ensures that:
+
+Parental control and approval are integral at every stage.
+The child learns about savings while being monitored.
+Security and legal requirements are strictly enforced.
+The account has a structured lifecycle with clear transitions based on activity, milestones, or security concerns.
+
+
+
+
+
+
+
+
+
+
+
