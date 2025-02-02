@@ -1,0 +1,55 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor "Child User" as Child
+actor "Parent User" as Parent
+
+rectangle "Underage Saving Bank System" {
+  (Set Savings Goals) as (SetSavingsGoals)
+  (Track Progress) as (TrackProgress)
+  (Complete Interactive Lessons) as (CompleteLessons)
+  (Earn Rewards) as (EarnRewards)
+  (Request Transaction) as (RequestTransaction)
+  (View Dashboard) as (ViewDashboard)
+  
+  (Create Child Account) as (CreateAccount)
+  (Set Spending Limits) as (SetLimits)
+  (Approve Transactions) as (ApproveTransactions)
+  (Monitor Activity) as (MonitorActivity)
+  (Generate Reports) as (GenerateReports)
+  (Add Encouragement) as (AddEncouragement)
+  
+  (Process Secure Transactions) as (ProcessTransactions)
+  (Encrypt Sensitive Data) as (EncryptData)
+  (Verify Identity) as (VerifyIdentity)
+  (Send Notifications) as (SendNotifications)
+}
+
+ Primary Associations
+Child --> (SetSavingsGoals)
+Child --> (TrackProgress)
+Child --> (CompleteLessons)
+Child --> (EarnRewards)
+Child --> (RequestTransaction)
+Child --> (ViewDashboard)
+
+Parent --> (CreateAccount)
+Parent --> (SetLimits)
+Parent --> (ApproveTransactions)
+Parent --> (MonitorActivity)
+Parent --> (GenerateReports)
+Parent --> (AddEncouragement)
+
+ Include Relationships
+(ProcessTransactions) .> (VerifyIdentity) : <<include>>
+(ProcessTransactions) .> (EncryptData) : <<include>>
+(CreateAccount) .> (EncryptData) : <<include>>
+(SetSavingsGoals) .> (SendNotifications) : <<include>>
+(ApproveTransactions) .> (SendNotifications) : <<include>>
+(AddEncouragement) .> (SendNotifications) : <<include>>
+
+ Extend Relationships
+(ProcessTransactions) <.. (RequestTransaction) : <<extend>>
+(CompleteLessons) <.. (EarnRewards) : <<extend>>
+
+@enduml
