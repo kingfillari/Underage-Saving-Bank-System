@@ -1,0 +1,62 @@
+@startuml
+!theme toy
+
+participant "Child User" as Child
+participant "Parent User" as Parent
+participant "Underage Saving\nBank System" as System
+participant "Educational\nModule" as EduModule
+participant "Security\nComponent" as Security
+
+title Underage Saving Bank System - Sequence Diagram
+
+group Account Setup
+Parent -> System: Sign Up (Child Details)
+System -> Security: Encrypt Sensitive Data
+Security --> System: Encryption Confirmation
+System --> Parent: Account Created\nConfirmation
+end
+
+group Parental Controls Setup
+Parent -> System: Login
+Parent -> System: Set Spending Limits\n& Approval Rules
+System --> Parent: Controls Activated
+end
+
+group Savings Goal Management
+Child -> System: Login
+Child -> System: Propose Savings Goal (e.g., "New Bicycle")
+System -> Parent: Approval Request
+Parent -> System: Approve Goal
+System -> Child: Goal Confirmed\nProgress Tracker Activated
+end
+
+group Financial Education
+Child -> System: Access Educational Modules
+System -> EduModule: Request Content
+EduModule --> System: Interactive Lesson (e.g., Budgeting)
+System -> Child: Display Gamified Lesson
+Child -> System: Complete Module Quiz
+System -> Security: Record Achievement
+System -> Child: Award Badge\nUpdate Reward Balance
+end
+
+group Secure Transaction
+Child -> System: Request Withdrawal
+System -> Security: Verify Transaction
+Security --> System: Authentication Valid
+System -> Parent: Approval Request
+Parent -> System: Approve Transaction
+System -> Security: Process Transaction
+Security --> System: Transaction Secured
+System --> Child: Funds Released
+end
+
+group Progress Tracking
+Parent -> System: Request Activity Report
+System -> Security: Verify Access Rights
+Security --> System: Authorization Confirmed
+System --> Parent: Send Progress Update\n(Savings + Education)
+Parent -> System: Add Encouragement Message
+System -> Child: Notify Parent Feedback
+end
+@enduml
