@@ -53,10 +53,14 @@ The account can return to Normal Operation if the parent resolves the issues.
 Alternatively, the parent can choose to close the account.
 
 6. Closed Account
-The account is permanently closed due to:
+An account may be permanently closed due to the following reasons:
+
 Parent-initiated closure.
 Registration cancellation.
-System or parental decision after frozen status.
+A system or parental decision following a frozen status.
+Unforeseen natural or human-induced disasters.
+
+
 
 Entry Actions:
 Archive account data.
