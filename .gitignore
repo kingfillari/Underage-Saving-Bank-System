@@ -1,0 +1,30 @@
+# Exclude compiled class files
+*.class
+
+# Exclude out directory
+out/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# IDE-specific files (IntelliJ IDEA, Eclipse, VSCode)
+.idea/
+*.iml
+*.classpath
+*.project
+.settings/
+.vscode/
+
+# Mac OS and Windows specific files
+.DS_Store
+Thumbs.db
