@@ -70,7 +70,7 @@ public class UnderageSavingBankSystem {
             System.out.print("Enter savings goal name: ");
             scanner.nextLine(); // Consume newline
             String goalName = scanner.nextLine();
-            System.out.print("Enter savings goal target amount: ");Wubet
+            System.out.print("Enter savings goal target amount: ");
             double targetAmount = scanner.nextDouble();
             SavingsGoal goal = new SavingsGoal(goalName, targetAmount);
             child.addSavingsGoal(goal);
@@ -108,30 +108,3 @@ public class UnderageSavingBankSystem {
     }
 
 
-// private static void showAdminMenu() {
-//     System.out.println("\nAdmin Menu:");
-//     System.out.println("1. Add Product");
-//     System.out.println("2. Edit Product");
-//     System.out.println("3. Delete Product");
-//     System.out.println("4. View All Orders");
-//     System.out.println("5. Update Order Status");
-//     System.out.println("6. Logout");
-//     System.out.println("7. Exit");
-//     System.out.print("Enter your choice: ");
-//     try {
-//         int choice = Integer.parseInt(scanner.nextLine());
-//         // ths is rule switch same as switch but with simple syntex.
-//         switch (choice) {
-//             case 1 -> addProduct();
-//             case 2 -> editProduct();
-//             case 3 -> deleteProduct();
-//             case 4 -> displayAllOrders();
-//             case 5 -> updateOrderStatus();
-//             case 6 -> logout();
-//             case 7 -> exit();
-//             default -> System.out.println("Invalid choice. Please select a valid option.");
-//         }
-//     } catch (NumberFormatException e) {
-//         System.out.println("Error: Invalid input. Please enter a number.");
-//     }
-// }
