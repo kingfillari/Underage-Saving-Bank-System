@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d0bdeec-7052-471e-9c95-3e7fe5493483" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/UnderageSavingBankSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/model/Child.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/model/EducationalModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/model/Parent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/model/SavingsGoal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/model/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main/java/com/bank/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banking-system/com/bank/UnderageSavingBankSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banking-system/com/bank/UnderageSavingBankSystem.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
