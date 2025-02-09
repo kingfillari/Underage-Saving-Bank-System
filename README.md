@@ -38,7 +38,6 @@ The system is designed for children aged 6–18. It offers age-appropriate tools
 
 1. **Sign Up**  
    Create an account for your child with parental supervision.
-   
 2. **Set Savings Goals**  
    Help your child define specific savings goals and track progress.
 
@@ -47,3 +46,13 @@ The system is designed for children aged 6–18. It offers age-appropriate tools
 
 4. **Track and Reward**  
    Monitor the account activity and celebrate milestones to reinforce good saving habits.
+
+### Group Members
+
+| **No.** | **Name**          | **Student ID**    | **Role** |
+| ------- | ----------------- | ----------------- | -------- |
+| 1       | Fillimon G/Tsadik | UGR/178838/12     | Member   |
+| 2       | Henok Mekonnen    | UGR/179052/12     | Member   |
+| 3       | Brhina Wubet      | UGR/170168/12     | Member   |
+| 4       | Mesele Shishay    | UGR/178259/12     | Member   |
+| 5       | Mebrahtom G/Hiwot | EITM/TUR181590/16 | Member   |
