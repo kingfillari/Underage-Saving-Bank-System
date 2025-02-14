@@ -12,6 +12,15 @@ import java.util.List;
 
 public class UnderageSavingBankSystem {
     private List<User> users;
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
     private List<Account> accounts;
     private static final String USER_DATA_FILE = "users.txt"; // File to store user data
     private static final String ACCOUNT_DATA_FILE = "accounts.txt"; // File to store account data
@@ -23,7 +32,7 @@ public class UnderageSavingBankSystem {
         this.adminAuth = new AdminAuthenticator("admin", "admin123"); // Set admin credentials
     }
 
-    public void addUser (User user) {
+    public void addUser(User user) {
         users.add(user);
         saveUserToFile(user); // Save user to file
     }
@@ -57,19 +66,19 @@ public class UnderageSavingBankSystem {
 
     public void listUsers() {
         System.out.println("List of Users:");
-        for (User  user : users) {
+        for (User user : users) {
             System.out.println("ID: " + user.getUserId() + ", Name: " + user.getName());
         }
     }
 
-    public void addNewUser (Scanner scanner) {
+    public void addNewUser(Scanner scanner) {
         System.out.print("Enter new user's name: ");
         String name = scanner.nextLine();
         System.out.print("Enter new user's ID: ");
         String id = scanner.nextLine();
 
-        User newUser  = new Parent(name, id); // Assuming User is a Parent for simplicity
-        addUser (newUser );
+        User newUser = new Parent(name, id); // Assuming User is a Parent for simplicity
+        addUser(newUser);
         System.out.println("New user added successfully.");
     }
 
@@ -149,7 +158,7 @@ public class UnderageSavingBankSystem {
                             system.listUsers();
                             break;
                         case 2:
-                            system.addNewUser (scanner);
+                            system.addNewUser(scanner);
                             break;
                         case 3:
                             adminSessionActive = false;
@@ -171,16 +180,18 @@ public class UnderageSavingBankSystem {
             String password = scanner.nextLine();
 
             // Here you can add logic to check if the user exists in the file
-            // For simplicity, we will assume the user does not exist and proceed to registration
+            // For simplicity, we will assume the user does not exist and proceed to
+            // registration
             System.out.println("User  does not exist. Proceeding to registration.");
-            User newUser  = new Parent(username, "PARENT_ID"); // Replace with actual user ID logic
-            system.addUser (newUser ); // Add user to the system
-            system.userRegistration(scanner, newUser );
+            User newUser = new Parent(username, "PARENT_ID"); // Replace with actual user ID logic
+            system.addUser(newUser); // Add user to the system
+            system.userRegistration(scanner, newUser);
 
             // Make a transaction
             System.out.print("Enter child's name for transaction: ");
             String childNameForTransaction = scanner.nextLine();
-            Child childForTransaction = newUser .getChildByName(childNameForTransaction); // Assuming a method to get child by name
+            Child childForTransaction = newUser.getChildByName(childNameForTransaction); // Assuming a method to get
+                                                                                         // child by name
             system.makeTransaction(scanner, childForTransaction);
         } else {
             System.out.println("Invalid option. Exiting.");
