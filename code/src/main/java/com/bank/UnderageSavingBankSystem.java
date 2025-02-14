@@ -22,7 +22,7 @@ public class UnderageSavingBankSystem {
         this.accounts = new ArrayList<>();
         this.adminAuth = new AdminAuthenticator("admin", "admin123"); // Set admin credentials
     }
-2
+
     public void addUser (User user) {
         users.add(user);
         saveUserToFile(user); // Save user to file
