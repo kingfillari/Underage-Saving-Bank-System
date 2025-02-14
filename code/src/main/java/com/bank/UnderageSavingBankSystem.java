@@ -3,12 +3,16 @@ package com.bank;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
-import com.bank.model.*;
-import com.bank.model.UserAuthenticator;
-import com.bank.model.AdminAuthenticator;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
+import com.bank.model.Account;
+import com.bank.model.AdminAuthenticator;
+import com.bank.model.Child;
+import com.bank.model.Parent;
+import com.bank.model.User;
+import com.bank.model.UserAuthenticator;
 
 public class UnderageSavingBankSystem {
     private List<User> users;

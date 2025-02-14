@@ -15,10 +15,23 @@ public class Transaction {
         this.approved = false;
     }
 
-    public String getType() { return type; }
-    public double getAmount() { return amount; }
-    public Date getDate() { return date; }
-    public boolean isApproved() { return approved; }
-    public void setApproved(boolean approved) { this.approved = approved; }
-}
+    public String getType() {
+        return type;
+    }
 
+    public double getAmount() {
+        return amount;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public boolean isApproved() {
+        return approved;
+    }
+
+    public void setApproved(boolean approved) {
+        this.approved = approved;
+    }
+}

@@ -19,6 +19,7 @@ public class Parent extends User {
         transaction.setApproved(true);
     }
 
-    public List<Child> getChildren() { return children; }
+    public List<Child> getChildren() {
+        return children;
+    }
 }
-

@@ -18,8 +18,15 @@ public class SavingsGoal {
         }
     }
 
-    public String getName() { return name; }
-    public double getTargetAmount() { return targetAmount; }
-    public double getCurrentAmount() { return currentAmount; }
-}
+    public String getName() {
+        return name;
+    }
 
+    public double getTargetAmount() {
+        return targetAmount;
+    }
+
+    public double getCurrentAmount() {
+        return currentAmount;
+    }
+}

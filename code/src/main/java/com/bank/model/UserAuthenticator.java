@@ -1,7 +1,5 @@
 package com.bank.model;
 
-import java.util.Scanner;
-
 public class UserAuthenticator {
     public boolean authenticate(String username, String password) {
         // Implement your user authentication logic here

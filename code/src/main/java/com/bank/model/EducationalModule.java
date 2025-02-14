@@ -11,8 +11,15 @@ public class EducationalModule {
         this.ageGroup = ageGroup;
     }
 
-    public String getTitle() { return title; }
-    public String getContent() { return content; }
-    public int getAgeGroup() { return ageGroup; }
-}
+    public String getTitle() {
+        return title;
+    }
 
+    public String getContent() {
+        return content;
+    }
+
+    public int getAgeGroup() {
+        return ageGroup;
+    }
+}

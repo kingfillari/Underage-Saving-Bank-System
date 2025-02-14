@@ -23,8 +23,15 @@ public class Child extends User {
         completedModules.add(module);
     }
 
-    public int getAge() { return age; }
-    public List<SavingsGoal> getSavingsGoals() { return savingsGoals; }
-    public List<EducationalModule> getCompletedModules() { return completedModules; }
-}
+    public int getAge() {
+        return age;
+    }
 
+    public List<SavingsGoal> getSavingsGoals() {
+        return savingsGoals;
+    }
+
+    public List<EducationalModule> getCompletedModules() {
+        return completedModules;
+    }
+}
