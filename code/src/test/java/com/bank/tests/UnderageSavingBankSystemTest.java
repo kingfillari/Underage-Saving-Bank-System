@@ -1,13 +1,20 @@
 package com.bank.tests;
 
-import com.bank.UnderageSavingBankSystem;
-import com.bank.model.*;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.List;
+import com.bank.UnderageSavingBankSystem;
+import com.bank.model.Account;
+import com.bank.model.Child;
+import com.bank.model.EducationalModule;
+import com.bank.model.Parent;
+import com.bank.model.SavingsGoal;
+import com.bank.model.User;
 
 class UnderageSavingBankSystemTest {
     private UnderageSavingBankSystem system;

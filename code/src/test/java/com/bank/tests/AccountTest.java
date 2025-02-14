@@ -2,16 +2,17 @@ package com.bank.tests;
 
 
 
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
+
 import org.junit.jupiter.api.Test;
 
 import com.bank.model.Account;
 import com.bank.model.Child;
 import com.bank.model.Transaction;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.List;
 
 class AccountTest {
     private Account account;
@@ -50,15 +51,17 @@ class AccountTest {
         assertEquals(50.0, account.getBalance(), "Balance should be updated correctly after withdrawal.");
         
         List<Transaction> transactions = account.getTransactions();
+
         assertEquals(2, transactions.size(), "There should be two transactions (deposit and withdrawal).");
         assertEquals("Withdrawal", transactions.get(1).getType(), "Transaction type should be 'Withdrawal'.");
+
         assertEquals(-50.0, transactions.get(1).getAmount(), "Transaction amount should be negative for withdrawal.");
     }
 
     @Test
     void testWithdrawInsufficientFunds() {
         account.withdraw(50.0);
-        assertEquals(0.0, account.getBalance(), "Balance should remain unchanged if funds are insufficient.");
-        assertTrue(account.getTransactions().isEmpty(), "No transaction should be recorded for failed withdrawals.");
+        assertEquals(0.0, account.getBalance(), "Balance should remain unchanged if funds are insufficient scenario ");
+        assertTrue(account.getTransactions().isEmpty(), "No transaction should be recorded for failed withdrawalS.");
     }
 }
