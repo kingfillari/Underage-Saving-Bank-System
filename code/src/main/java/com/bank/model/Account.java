@@ -30,9 +30,19 @@ public class Account {
         }
     }
 
-    public String getAccountId() { return accountId; }
-    public Child getOwner() { return owner; }
-    public double getBalance() { return balance; }
-    public List<Transaction> getTransactions() { return transactions; }
-}
+    public String getAccountId() {
+        return accountId;
+    }
 
+    public Child getOwner() {
+        return owner;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public List<Transaction> getTransactions() {
+        return transactions;
+    }
+}

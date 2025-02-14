@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bank</groupId>
-    <artifactId>junit5-test-project</artifactId>
+    <artifactId>under-age-saving-bank-system</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

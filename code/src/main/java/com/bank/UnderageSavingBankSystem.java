@@ -183,9 +183,6 @@ public class UnderageSavingBankSystem {
             System.out.print("Enter password: ");
             String password = scanner.nextLine();
 
-            // Here you can add logic to check if the user exists in the file
-            // For simplicity, we will assume the user does not exist and proceed to
-            // registration
             System.out.println("User  does not exist. Proceeding to registration.");
             User newUser = new Parent(username, "PARENT_ID"); // Replace with actual user ID logic
             system.addUser(newUser); // Add user to the system

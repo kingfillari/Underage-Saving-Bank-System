@@ -1,21 +1,20 @@
 package com.bank.tests;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.io.File;
 
-import java.util.Scanner;
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
+import com.bank.UnderageSavingBankSystem;
+import com.bank.model.Account;
+import com.bank.model.AdminAuthenticator;
 import com.bank.model.Child;
 import com.bank.model.Parent;
 import com.bank.model.User;
 import com.bank.model.UserAuthenticator;
-import com.bank.UnderageSavingBankSystem;
-import com.bank.model.Account;
-import com.bank.model.AdminAuthenticator;
 
 public class UnderageSavingBankSystemTest {
 
@@ -37,22 +36,22 @@ public class UnderageSavingBankSystemTest {
         assertTrue(system.getUsers().contains(user));
     }
 
-    // @Test
-    // public void testCreateAccount() {
-    // Child child = new Child("Jane Doe", "CHILD_ID", 10);
-    // system.createAccount(child);
-    // assertNotNull(system.getAccountForChild(child));
-    // }
+    @Test
+    public void testCreateAccount() {
+        Child child = new Child("Jane Doe", "CHILD_ID", 10);
+        system.createAccount(child);
+        assertNotNull(system.getAccountForChild(child));
+    }
 
-    // @Test
-    // public void testListUsers() {
-    // User user1 = new Parent("John Doe", "PARENT_ID");
-    // User user2 = new Parent("Jane Doe", "PARENT_ID");
-    // system.addUser(user1);
-    // system.addUser(user2);
-    // system.listUsers();
-    // // Verify that the users are listed correctly
-    // }
+    @Test
+    public void testListUsers() {
+        User user1 = new Parent("John Doe", "PARENT_ID");
+        User user2 = new Parent("Jane Doe", "PARENT_ID");
+        system.addUser(user1);
+        system.addUser(user2);
+        system.listUsers();
+        // Verify that the users are listed correctly
+    }
 
     // @Test
     // public void testUserRegistration() {
@@ -70,20 +69,20 @@ public class UnderageSavingBankSystemTest {
     // // Verify that the transaction is successful
     // }
 
-    // @Test
-    // public void testGetAccountForChild() {
-    // Child child = new Child("Jane Doe", "CHILD_ID", 10);
-    // system.createAccount(child);
-    // Account account = system.getAccountForChild(child);
-    // assertNotNull(account);
-    // }
+    @Test
+    public void testGetAccountForChild() {
+        Child child = new Child("Jane Doe", "CHILD_ID", 10);
+        system.createAccount(child);
+        Account account = system.getAccountForChild(child);
+        assertNotNull(account);
+    }
 
-    // @Test
-    // public void testAdminLogin() {
-    // String adminUsername = "admin";
-    // String adminPassword = "admin123";
-    // assertTrue(adminAuth.authenticate(adminUsername, adminPassword));
-    // }
+    @Test
+    public void testAdminLogin() {
+        String adminUsername = "admin";
+        String adminPassword = "admin123";
+        assertTrue(adminAuth.authenticate(adminUsername, adminPassword));
+    }
 
     @AfterEach
     public void tearDown() {
