@@ -1,0 +1,10 @@
+com\bank\model\Account.class
+com\bank\model\Child.class
+com\bank\model\UserAuthenticator.class
+com\bank\UnderageSavingBankSystem.class
+com\bank\model\AdminAuthenticator.class
+com\bank\model\SavingsGoal.class
+com\bank\model\User.class
+com\bank\model\Parent.class
+com\bank\model\Transaction.class
+com\bank\model\EducationalModule.class
