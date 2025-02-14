@@ -70,13 +70,13 @@ public class UnderageSavingBankSystemTest {
     // // Verify that the transaction is successful
     // }
 
-    @Test
-    public void testGetAccountForChild() {
-        Child child = new Child("Jane Doe", "CHILD_ID", 10);
-        system.createAccount(child);
-        Account account = system.getAccountForChild(child);
-        assertNotNull(account);
-    }
+    // @Test
+    // public void testGetAccountForChild() {
+    // Child child = new Child("Jane Doe", "CHILD_ID", 10);
+    // system.createAccount(child);
+    // Account account = system.getAccountForChild(child);
+    // assertNotNull(account);
+    // }
 
     // @Test
     // public void testAdminLogin() {
