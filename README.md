@@ -133,12 +133,6 @@ Below are the screenshots of the UML diagrams used in the project:
 ### Use Case Diagram
 ![Use Case Diagram](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/refs/heads/main/Use%20Case/Use%20Case%20Diagram.png)
 
-### Additional Screenshots
-#### Banking System Model
-![Banking System Model](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/main/screenshots/banking_system_model.png)
-
-#### User Interaction Flow
-![User Interaction Flow](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/main/screenshots/user_interaction_flow.png)
 
 ### Group Members
 
