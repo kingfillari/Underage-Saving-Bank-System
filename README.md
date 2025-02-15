@@ -117,6 +117,29 @@ Use the educational modules to teach your child financial concepts and encourage
 
 Monitor the account activity and celebrate milestones to reinforce good saving habits.
 
+
+## Screenshots of Diagrams
+Below are the screenshots of the UML diagrams used in the project:
+
+### Class Diagram
+![Class Diagram](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/refs/heads/main/class%20idagram/class%20diagram.jpg)
+
+### Sequence Diagram
+![Sequence Diagram](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/refs/heads/main/sequence%20diagram/Sequence%20Diagram.png)
+
+### State Machine Diagram
+![State Machine Diagram](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/refs/heads/main/state%20machine%20folder/state%20machine%20diagram.png)
+
+### Use Case Diagram
+![Use Case Diagram](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/refs/heads/main/Use%20Case/Use%20Case%20Diagram.png)
+
+### Additional Screenshots
+#### Banking System Model
+![Banking System Model](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/main/screenshots/banking_system_model.png)
+
+#### User Interaction Flow
+![User Interaction Flow](https://raw.githubusercontent.com/kingfillari/Underage-Saving-Bank-System/main/screenshots/user_interaction_flow.png)
+
 ### Group Members
 
 | **No.** | **Name**          | **Student ID**    | **Role** |
