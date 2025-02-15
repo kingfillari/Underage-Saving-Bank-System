@@ -52,7 +52,7 @@ Ensure you have the following installed:
    - Open the `code` directory.
 
 2. **Compile the Project**
-   Open a terminal or command prompt and navigate to the `code` directory. Then, compile the Java files:
+   Open a terminal or command prompt and navigate to the `code/src/main/java` directory. Then, compile the Java files:
 
    ```sh
    javac -d . com/bank/*.java
@@ -63,6 +63,37 @@ Ensure you have the following installed:
    ```sh
    java com.bank.UnderageSavingBankSystem
    ```
+
+## Useful Maven Commands
+
+Open a terminal or command prompt and navigate to the `code` directory. Then use run the following maven commands,
+
+```sh
+# Compile source code
+mvn compile
+
+# Run unit tests
+mvn test
+
+# Create a JAR/WAR file
+mvn package
+
+# Remove compiled files and build artifacts
+mvn clean
+
+# Clean and then package
+mvn clean package
+
+
+# Deploy the package to a remote repository
+mvn deploy
+```
+
+### Notes
+
+- Ensure that Maven is installed and configured correctly.
+- Run these commands in the project's root directory where `pom.xml` is located.
+- Use `mvn -v` to check your Maven version.
 
 ## Future Enhancements
 

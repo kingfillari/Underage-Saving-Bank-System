@@ -1,13 +1,11 @@
 package com.bank.tests;
 
-
-
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
-
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import com.bank.model.Account;
@@ -25,6 +23,7 @@ class AccountTest {
     }
 
     @Test
+    @DisplayName("Test if Account ID is set correctly")
     void testAccountInitialization() {
         assertEquals("ACC001", account.getAccountId(), "Account ID should be set correctly.");
         assertEquals(child, account.getOwner(), "Account owner should be the assigned child.");
@@ -36,7 +35,7 @@ class AccountTest {
     void testDeposit() {
         account.deposit(100.0);
         assertEquals(100.0, account.getBalance(), "Balance should reflect the deposited amount.");
-        
+
         List<Transaction> transactions = account.getTransactions();
         assertEquals(1, transactions.size(), "There should be one transaction after deposit.");
         assertEquals("Deposit", transactions.get(0).getType(), "Transaction type should be 'Deposit'.");
@@ -47,9 +46,9 @@ class AccountTest {
     void testWithdrawSufficientFunds() {
         account.deposit(100.0);
         account.withdraw(50.0);
-        
+
         assertEquals(50.0, account.getBalance(), "Balance should be updated correctly after withdrawal.");
-        
+
         List<Transaction> transactions = account.getTransactions();
 
         assertEquals(2, transactions.size(), "There should be two transactions (deposit and withdrawal).");
