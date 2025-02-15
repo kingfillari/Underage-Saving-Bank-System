@@ -1,89 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bank.tests.UnderageSavingBankSystemTest" time="0.045" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bank.tests.UnderageSavingBankSystemTest" time="0.338" tests="5" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="21"/>
+    <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\hp\Desktop\New folder (3)\Underage-Saving-Bank-System\code\target\test-classes;C:\Users\hp\Desktop\New folder (3)\Underage-Saving-Bank-System\code\target\classes;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\hp\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\hp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;"/>
+    <property name="java.class.path" value="E:\github project under modified\Underage-Saving-Bank-System\code\target\test-classes;E:\github project under modified\Underage-Saving-Bank-System\code\target\classes;C:\Users\Hello\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Hello\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Hello\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Hello\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Hello\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Hello\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Hello\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
-    <property name="user.timezone" value="GMT-07:00"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="java.vm.specification.version" value="21"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="AE"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\hp\AppData\Local\Temp\surefire16296115742703960214\surefirebooter-20250214164916814_3.jar C:\Users\hp\AppData\Local\Temp\surefire16296115742703960214 2025-02-14T16-49-16_244-jvmRun1 surefire-20250214164916814_1tmp surefire_0-20250214164916814_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Hello\AppData\Local\Temp\surefire9248315723554703924\surefirebooter-20250214122303729_3.jar C:\Users\Hello\AppData\Local\Temp\surefire9248315723554703924 2025-02-14T12-22-56_855-jvmRun1 surefire-20250214122303729_1tmp surefire_0-20250214122303729_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\hp\Desktop\New folder (3)\Underage-Saving-Bank-System\code\target\test-classes;C:\Users\hp\Desktop\New folder (3)\Underage-Saving-Bank-System\code\target\classes;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\hp\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\hp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;"/>
+    <property name="test" value="com.bank.tests.UnderageSavingBankSystemTest"/>
+    <property name="surefire.test.class.path" value="E:\github project under modified\Underage-Saving-Bank-System\code\target\test-classes;E:\github project under modified\Underage-Saving-Bank-System\code\target\classes;C:\Users\Hello\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Hello\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Hello\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Hello\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Hello\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Hello\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Hello\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\hp"/>
+    <property name="user.home" value="C:\Users\Hello"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2024-01-16"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\hp\Desktop\New folder (3)\Underage-Saving-Bank-System\code"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="basedir" value="E:\github project under modified\Underage-Saving-Bank-System\code"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\hp\AppData\Local\Temp\surefire16296115742703960214\surefirebooter-20250214164916814_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Hello\AppData\Local\Temp\surefire9248315723554703924\surefirebooter-20250214122303729_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
-    <property name="user.name" value="hp"/>
-    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="Hello"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\hp\.m2\repository"/>
+    <property name="maven.ext.class.path" value="C:\Users\Hello\.vscode\extensions\oracle.oracle-java-23.1.0\nbcode\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\Hello\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\hp\AppData\Local\Temp\"/>
-    <property name="java.version" value="21.0.2"/>
-    <property name="user.dir" value="C:\Users\hp\Desktop\New folder (3)\Underage-Saving-Bank-System\code"/>
+    <property name="java.io.tmpdir" value="C:\Users\Hello\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="E:\github project under modified\Underage-Saving-Bank-System\code"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-21\bin;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Local\Programs\Ollama;C:\Program Files\CodeBlocks\MinGW\bin;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\AppData\Local\Programs\mongosh\;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;&quot;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Java\jre1.8.0_202\bin&quot;;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;E:\APPLICATION AREA\apache-maven-3.9.9-bin_2\apache-maven-3.9.9\bin;&quot;C:\xampp-new\php;&quot;;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Hello\AppData\Local\Microsoft\WindowsApps;C:\Users\Hello\AppData\Local\Programs\Microsoft VS Code\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="21.0.2+13-LTS-58"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAccountCreation" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.022">
+  <testcase name="testAccountCreation" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.208">
     <system-out><![CDATA[User added: Abebe Bekele
 User added: Kidus Abebe
 Account created for child: Kidus Abebe (Account ID: ACC1)
 ]]></system-out>
   </testcase>
-  <testcase name="testUserAddedSuccessfully" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.002">
+  <testcase name="testUserAddedSuccessfully" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.005">
     <system-out><![CDATA[User added: Abebe Bekele
 User added: Kidus Abebe
 Account created for child: Kidus Abebe (Account ID: ACC1)
 ]]></system-out>
   </testcase>
-  <testcase name="testEducationalModuleCompletion" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.003">
+  <testcase name="testEducationalModuleCompletion" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.006">
     <system-out><![CDATA[User added: Abebe Bekele
 User added: Kidus Abebe
 Account created for child: Kidus Abebe (Account ID: ACC1)
 Educational module added: Budgeting Basics
 ]]></system-out>
   </testcase>
-  <testcase name="testSavingsGoalProgress" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.001">
+  <testcase name="testSavingsGoalProgress" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.009">
     <system-out><![CDATA[User added: Abebe Bekele
 User added: Kidus Abebe
 Account created for child: Kidus Abebe (Account ID: ACC1)
 ]]></system-out>
   </testcase>
-  <testcase name="testDepositFunctionality" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.002">
+  <testcase name="testDepositFunctionality" classname="com.bank.tests.UnderageSavingBankSystemTest" time="0.003">
     <system-out><![CDATA[User added: Abebe Bekele
 User added: Kidus Abebe
 Account created for child: Kidus Abebe (Account ID: ACC1)
