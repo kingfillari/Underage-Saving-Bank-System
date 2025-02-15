@@ -1,101 +1,75 @@
 package com.bank.tests;
 
-import org.junit.jupiter.api.AfterEach;
+import com.bank.UnderageSavingBankSystem;
+import com.bank.model.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.io.File;
+import java.util.List;
 
-import java.util.Scanner;
-
-import com.bank.model.Child;
-import com.bank.model.Parent;
-import com.bank.model.User;
-import com.bank.model.UserAuthenticator;
-import com.bank.UnderageSavingBankSystem;
-import com.bank.model.Account;
-import com.bank.model.AdminAuthenticator;
-
-public class UnderageSavingBankSystemTest {
-
+class UnderageSavingBankSystemTest {
     private UnderageSavingBankSystem system;
-    private UserAuthenticator userAuth;
-    private AdminAuthenticator adminAuth;
+    private Parent parent;
+    private Child child;
 
     @BeforeEach
-    public void setup() {
+    void setUp() {
         system = new UnderageSavingBankSystem();
-        userAuth = new UserAuthenticator();
-        adminAuth = new AdminAuthenticator("admin", "admin123");
+
+        // Create users
+        parent = new Parent("Abebe Bekele", "P001");
+        child = new Child("Kidus Abebe", "C001", 10);
+        parent.addChild(child);
+
+        system.addUser(parent);
+        system.addUser(child);
+
+        // Create account for child
+        system.createAccount(child);
     }
 
     @Test
-    public void testAddUser() {
-        User user = new Parent("John Doe", "PARENT_ID");
-        system.addUser(user);
-        assertTrue(system.getUsers().contains(user));
+    void testUserAddedSuccessfully() {
+        List<User> users = system.getUsers();
+        assertEquals(2, users.size(), "There should be 2 users (parent and child) in the system.");
     }
 
-    // @Test
-    // public void testCreateAccount() {
-    // Child child = new Child("Jane Doe", "CHILD_ID", 10);
-    // system.createAccount(child);
-    // assertNotNull(system.getAccountForChild(child));
-    // }
+    @Test
+    void testAccountCreation() {
+        Account childAccount = system.getAccountForChild(child);
+        assertNotNull(childAccount, "Child account should be created successfully.");
+        assertEquals(0.0, childAccount.getBalance(), "Newly created account should have a zero balance.");
+    }
 
-    // @Test
-    // public void testListUsers() {
-    // User user1 = new Parent("John Doe", "PARENT_ID");
-    // User user2 = new Parent("Jane Doe", "PARENT_ID");
-    // system.addUser(user1);
-    // system.addUser(user2);
-    // system.listUsers();
-    // // Verify that the users are listed correctly
-    // }
+    @Test
+    void testDepositFunctionality() {
+        Account childAccount = system.getAccountForChild(child);
+        assertNotNull(childAccount);
 
-    // @Test
-    // public void testUserRegistration() {
-    // User user = new Parent("John Doe", "PARENT_ID");
-    // system.addUser(user);
-    // system.userRegistration(new Scanner(System.in), user);
-    // // Verify that the child is added to the user
-    // }
+        childAccount.deposit(50.0);
+        assertEquals(50.0, childAccount.getBalance(), "Account balance should be updated after deposit.");
+    }
 
-    // @Test
-    // public void testMakeTransaction() {
-    // Child child = new Child("Jane Doe", "CHILD_ID", 10);
-    // system.createAccount(child);
-    // system.makeTransaction(new Scanner(System.in), child);
-    // // Verify that the transaction is successful
-    // }
+    @Test
+    void testSavingsGoalProgress() {
+        SavingsGoal goal = new SavingsGoal("New Bike", 100.0);
+        child.addSavingsGoal(goal);
 
-    // @Test
-    // public void testGetAccountForChild() {
-    // Child child = new Child("Jane Doe", "CHILD_ID", 10);
-    // system.createAccount(child);
-    // Account account = system.getAccountForChild(child);
-    // assertNotNull(account);
-    // }
+        goal.addSavings(50.0);
+        assertEquals(50.0, goal.getCurrentAmount(), "Savings goal should reflect the correct amount saved.");
+    }
 
-    // @Test
-    // public void testAdminLogin() {
-    // String adminUsername = "admin";
-    // String adminPassword = "admin123";
-    // assertTrue(adminAuth.authenticate(adminUsername, adminPassword));
-    // }
+    @Test
+    void testEducationalModuleCompletion() {
+        EducationalModule module = new EducationalModule("Budgeting Basics", "Learn how to create a simple budget", 10);
+        system.addEducationalModule(module);
 
-    @AfterEach
-    public void tearDown() {
-        // Delete the user data file
-        File userDataFile = new File("users.txt");
-        if (userDataFile.exists()) {
-            userDataFile.delete();
-        }
-        // Delete the account data file
-        File accountDataFile = new File("accounts.txt");
-        if (accountDataFile.exists()) {
-            accountDataFile.delete();
-        }
+        child.completeEducationalModule(module);
+
+        List<EducationalModule> completedModules = child.getCompletedModules();
+        assertEquals(1, completedModules.size(), "Child should have completed one educational module.");
+        assertTrue(completedModules.contains(module), "The completed module list should contain the added module.");
     }
 }
