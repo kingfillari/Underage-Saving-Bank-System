@@ -28,3 +28,4 @@ out/
 # Mac OS and Windows specific files
 .DS_Store
 Thumbs.db
+".git-rewrite/" 
