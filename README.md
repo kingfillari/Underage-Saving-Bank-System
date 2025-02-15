@@ -37,18 +37,23 @@ The system is designed for children aged 6–18. It offers age-appropriate tools
 ## Usage
 
 ## Prerequisites
+
 Ensure you have the following installed:
+
 - Java Development Kit (JDK) 8 or higher
 - Any Java IDE (Eclipse, IntelliJ IDEA, or VS Code with Java support)
 - A terminal or command prompt
 
 ## Installation Steps
+
 1. **Download the Source Code**
-    - Extract the provided ZIP file.
-    - Open the `code` directory.
+
+   - Extract the provided ZIP file.
+   - Open the `code` directory.
 
 2. **Compile the Project**
    Open a terminal or command prompt and navigate to the `code` directory. Then, compile the Java files:
+
    ```sh
    javac -d . com/bank/*.java
    ```
@@ -59,42 +64,27 @@ Ensure you have the following installed:
    java com.bank.UnderageSavingBankSystem
    ```
 
-### Admin Login
-1. Run the program and choose `1` for Admin login.
-2. Enter the default admin credentials:
-    - **Username:** `admin`
-    - **Password:** `admin123`
-3. Admin can:
-    - View all registered users.
-    - Add new users.
-
-### User Registration & Transactions
-1. Choose `2` for User login.
-2. If the user does not exist, register by entering a username and password.
-3. Register a child under the user’s account.
-4. Perform transactions such as deposits.
-
-## Data Storage
-- User and account details are stored in text files:
-    - `users.txt` - Stores registered users.
-    - `accounts.txt` - Stores account details.
-
 ## Future Enhancements
+
 - Implement database storage instead of text files.
 - Add a GUI for better user interaction.
 - Introduce withdrawal functionality.
 
-## Sign Up  
-   Create an account for your child with parental supervision.
+## Sign Up
 
-## Set Savings Goals  
-   Help your child define specific savings goals and track progress.
+Create an account for your child with parental supervision.
 
-## Learn and Earn 
-   Use the educational modules to teach your child financial concepts and encourage them to save regularly.
+## Set Savings Goals
 
-## Track and Reward  
-   Monitor the account activity and celebrate milestones to reinforce good saving habits.
+Help your child define specific savings goals and track progress.
+
+## Learn and Earn
+
+Use the educational modules to teach your child financial concepts and encourage them to save regularly.
+
+## Track and Reward
+
+Monitor the account activity and celebrate milestones to reinforce good saving habits.
 
 ### Group Members
 
@@ -106,6 +96,6 @@ Ensure you have the following installed:
 | 4       | Mesele Shishay    | UGR/178259/12     | Member   |
 | 5       | Mebrahtom G/Hiwot | EITM/TUR181590/16 | Member   |
 
-
 ## License
+
 This project is for educational purposes only.
